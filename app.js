@@ -205,25 +205,25 @@ process.on('uncaughtException', err => {
 });
 
 function printLogo() {
-    let logo = fs
-        .readFileSync(__dirname + '/logo.txt', 'utf-8')
-        .replace(/^\n+|\n+$/g, '')
-        .split('\n');
+    // let logo = fs
+    //     .readFileSync(__dirname + '/logo.txt', 'utf-8')
+    //     .replace(/^\n+|\n+$/g, '')
+    //     .split('\n');
 
-    let columnLength = logo.map(l => l.length).reduce((max, val) => (val > max ? val : max), 0);
+    // let columnLength = logo.map(l => l.length).reduce((max, val) => (val > max ? val : max), 0);
     let versionString = ' ' + packageData.name + '@' + packageData.version + ' ';
-    let versionPrefix = '-'.repeat(Math.round(columnLength / 2 - versionString.length / 2));
-    let versionSuffix = '-'.repeat(columnLength - versionPrefix.length - versionString.length);
+    // let versionPrefix = '-'.repeat(Math.round(columnLength / 2 - versionString.length / 2));
+    // let versionSuffix = '-'.repeat(columnLength - versionPrefix.length - versionString.length);
 
-    log.info('App', ' ' + '-'.repeat(columnLength));
-    log.info('App', '');
+    // log.info('App', ' ' + '-'.repeat(columnLength));
+    // log.info('App', '');
 
-    logo.forEach(line => {
-        log.info('App', ' ' + line);
-    });
+    // logo.forEach(line => {
+    //     log.info('App', ' ' + line);
+    // });
 
-    log.info('App', '');
+    // log.info('App', '');
 
-    log.info('App', ' ' + versionPrefix + versionString + versionSuffix);
-    log.info('App', '');
+    log.info('App', ' ' + versionString);
+    // log.info('App', '');
 }
