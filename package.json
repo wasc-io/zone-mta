@@ -19,7 +19,7 @@
         "crc-32": "1.2.2",
         "dnscache": "1.0.2",
         "gelf": "2.0.1",
-        "ioredis": "4.28.5",
+        "ioredis": "5.0.4",
         "isemail": "3.2.0",
         "js-yaml": "4.1.0",
         "libmime": "5.0.0",
