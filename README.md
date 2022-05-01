@@ -256,6 +256,14 @@ Subject: Hello!
 Hello world'
 ```
 
+```bash
+curl http://localhost:8080/healthz
+
+{
+    "redis": true
+}
+```
+
 #### Zone status
 
 You can check the current state of a sending zone (for example "default") with the following query
